@@ -1,0 +1,19 @@
+0.3.0
+=====
+
+* Copy code to github
+* Changed name from ssh to openssh to be more specific
+* Split up manifests into individual actions
+* Add several configurable options in regards to the module itself
+* Add sftp_chroot option which will allow sftponly users
+
+0.2.0 (internal only)
+=====
+
+* Add testing (currently puppet-lint only) and fixed what puppet-lint caught
+* Update templates to fix v3.2 warnings
+
+0.1.0 (internal only)
+=====
+
+* Initial release
