@@ -19,7 +19,7 @@ This manages the OpenSSH server.
 
 ##Module Description
 
-This manages the configuration of the OpenSSH server. It's defaults fall in line with the [CIS Benchmarks](http://www.cisecurity.org/) for ssh servers. As such the defaults are pretty strict and may need adjustment.
+This manages the configuration of the OpenSSH server. It's defaults fall in line with the [CIS Benchmarks](http://www.cisecurity.org/) and [USGCB](http://usgcb.nist.gov/usgcb/rhel_content.html) benchmarks for ssh servers (as an aside the USGCB link has puppet module downloads. They are... sub-optimal and shouldn't actually be used). As such the defaults are pretty strict and may need adjustment.
 
 ##Setup
 
