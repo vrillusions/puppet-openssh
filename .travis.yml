@@ -19,16 +19,16 @@ env:
   # 3.0.0 - Current PE version
   # 3.2.0 - Because 3.3.0 just came out
   # 3.3.0 - Latest in 3.x
-  - PUPPET_VERSION=~>2.7.0
-  - PUPPET_VERSION=~>3.0.0
-  - PUPPET_VERSION=~>3.2.0
-  - PUPPET_VERSION=~>3.3.0
+  - PUPPET_VERSION="~> 2.7.0"
+  - PUPPET_VERSION="~> 3.0.0"
+  - PUPPET_VERSION="~> 3.2.0"
+  - PUPPET_VERSION="~> 3.3.0"
 matrix:
   eclude:
     # Ruby v2 officially supported in 3.2+
     - rvm: 2.0.0
-      env: PUPPET_VERSION=~>2.7.0
+      env: PUPPET_VERSION="~> 2.7.0"
     - rvm: 2.0.0
-      env: PUPPET_VERSION=~>3.0.0
+      env: PUPPET_VERSION="~> 3.0.0"
 notifications:
   email: false
