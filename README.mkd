@@ -1,5 +1,7 @@
 #openssh
 
+[![Build Status](https://travis-ci.org/vrillusions/puppet-openssh.png?branch=master)](https://travis-ci.org/vrillusions/puppet-openssh)
+
 ####Table of Contents
 
 1. [Overview](#overview)

@@ -4,6 +4,10 @@ before_install:
   - rm Gemfile.lock || true
   - rm .ruby-* || true
 rvm:
+  # Justifications:
+  # 1.8.7 - the minimum supported version, on CentOS machines
+  # 1.9.3 - latest in 1.9.x
+  # 2.0.0 - latest in 2.0.x
   - 1.8.7
   - 1.9.3
   - 2.0.0
@@ -11,9 +15,21 @@ rvm:
 #script: bundle exec rake
 env:
   matrix:
+    # Justification:
+    # 2.7.0 - PE users who haven't updated
+    # 3.0.0 - Current PE version
+    # 3.2.0 - Because 3.3.0 just came out
+    # 3.3.0 - Latest in 3.x
     - PUPPET_VERSION="~> 2.7.0"
     - PUPPET_VERSION="~> 3.0.0"
     - PUPPET_VERSION="~> 3.2.0"
     - PUPPET_VERSION="~> 3.3.0"
+matrix:
+  eclude:
+    # Ruby v2 officially supported in 3.2+
+    - rvm: 2.0.0
+      env: PUPPET_VERSION="~> 2.7.0"
+    - rvm: 2.0.0
+      env: PUPPET_VERSION="~> 3.0.0"
 notifications:
   email: false
