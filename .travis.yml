@@ -25,7 +25,7 @@ env:
     - PUPPET_VERSION="~> 3.2.0"
     - PUPPET_VERSION="~> 3.3.0"
 matrix:
-  eclude:
+  exclude:
     # Ruby v2 officially supported in 3.2+
     - rvm: 2.0.0
       env: PUPPET_VERSION="~> 2.7.0"
